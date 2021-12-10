@@ -3,9 +3,6 @@ import {MintRequest} from "../../app/types";
 import {contract} from "../../chain/contract";
 import {abi} from "../../chain/abi";
 
-// Address -> 0x8626f6940e2eb28930efb4cef49b2d1f2c9c1199
-const TEST_PRIVATE_KEY = "0xdf57089febbacf7ba0bc227dafbffa9fc08a93fdc68e1e42411a14efcf23656e"
-
 const { ethereum } = (window as any);
 
 export const getSigner = () => {
