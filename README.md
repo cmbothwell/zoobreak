@@ -2,7 +2,7 @@
 
 Zoobreak is an innovative NFT project that aims to drive the space forward by utilizing a unique mix of on- and off-chain elements. 
 
-We use the unque possibilities presented by a traditional off-chain server side setup interacting with on-chain data to provide an immersive and rewarding experience for players. 
+We use the unique possibilities presented by a traditional off-chain server side setup interacting with on-chain data to provide an immersive and rewarding experience for players. 
 
 ## Setup
 
