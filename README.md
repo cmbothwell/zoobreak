@@ -236,4 +236,105 @@ Inspired by SVS @WOOF
 
 ## API Spec
 
-Coming soon
+| Route                                  | Method   | Request Arguments      | Response                     | Note                                                          |
+|----------------------------------------|----------|------------------------|------------------------------|---------------------------------------------------------------|
+| `<domain>/api/ping/`                   | **GET**  | None                   | "Successfully Got Some Data" | ---                                                           |
+| `<domain>/api/metadata/<token_id>/`    | **GET**  | `<token_id>` (url)     | Token Metadata URL           | Variable metadata endpoint (see contract) not yet implemented |
+| `<domain>/api/wallet/register/`        | **POST** | Wallet Register Object | Wallet Response Object       | ---                                                           |
+| `<domain>/api/wallet/register/update/` | **POST** | Wallet Register Object | Wallet Response Object       | ---                                                           |
+| `<domain>/api/wallet/`                 | **POST** | Address Object         | Wallet Response Object       | ---                                                           |
+| `<domain>/api/wallet/tokens/`          | **POST** | Address Object         | [Token Response Object]      | ---                                                           |
+| `<domain>/api/mint_request/`           | **POST** | Mint Request Object    | Mint Request Response Object | ---                                                           |
+| `<domain>/api/withdraw_love/`          | **POST** | Address Object         | Love Request Response Object | ---                                                           |
+| `<domain>/api/action/`                 | **POST** | Action Object          | Token Response Object        | ---                                                           |
+
+### Wallet Register Object
+
+```
+{
+    "wallet": {
+        "address": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+        "email": "corey@avim.io",
+        "discord": "KingBlue#3333",
+        "twitter": "@kingblue"
+    },
+    "signature": "0x47839cfb7f0cfebbb9997624c9dc85252383342ba3de8b78c1ab3bf4b82059671bfb1b4d7e9dc6ba221b7076ef65ee0b87f5b60d277217e7cee880db6597948b1b"
+}
+```
+
+### Wallet Response Object
+
+```
+{
+    "address": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "email": "corey@avim.io",
+    "discord": "KingBlue#3333",
+    "twitter": "@kingblue",
+    "join_date": "2021-12-10T16:05:30.407287Z",
+    "points": 0
+}
+```
+
+### Address Object
+
+```
+{
+    "address": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "signature": "0x0830f316c982a7fd4ff050c8fdc1212a8fd92f6bb42b2337b839f2b4e156f05a359ef8f4acd0b57cdedec7874a865ee07076ab2c81dc9f9de28ced55228587f81c"
+}
+```
+
+### Token Response Object
+
+```
+{
+    fed_until: "2021-12-10T07:45:45.916617Z"
+    hunger: "DEAD"
+    is_alive: false
+    is_sleeping: false
+    love: 0
+    message: ""
+    name: "Token #1"
+    rested_until: "2021-12-10T23:45:45.916638Z"
+    sleep: "SLEEP_DEPRIVED"
+    sleeping_until: "2021-12-09T19:45:45.916646Z"
+    token_id: 1
+    token_uri: "https://api.thresholdholdings.com/api/metadata/1"
+}
+```
+
+### Mint Request Object
+
+```
+{
+    "mint_request": {
+        "address": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+        "quantity": 1
+    },
+    "signature": "0xe651f1db4aacd984b64f94a7862e25591706febe07d75e6ddc2d151ffe6ffb2761eb2dd2049e31893ceca99a9cd8a275a1458abbd310ba229d7585d63119952d1b"
+}
+```
+
+### Mint Request Response Object
+
+```
+{
+    "address": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "quantity": 1,
+    "nonce": "13LyA5FS6ZNCgVceL6DJvoOv1ePJiRf9",
+    "hash": "0x23f55e604c5799c67bc0e1919d6192c27c4dda6c67f0a8418d14245e0a3667d3",
+    "signature": "0x5f139409bc2136b26c98c2d59b73214b0b5bca13c56fc576fd11ba2fd016e71c6778ba56036654c1fe44b052891cf9a603079d87e7342bfbea524d64f7dab5311b"
+}
+```
+
+### Love Request Response Object
+
+```
+{
+    "address": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "amount": 1,
+    "nonce": "13LyA5FS6ZNCgVceL6DJvoOv1ePJiRf9",
+    "hash": "0x23f55e604c5799c67bc0e1919d6192c27c4dda6c67f0a8418d14245e0a3667d3",
+    "signature": "0x5f139409bc2136b26c98c2d59b73214b0b5bca13c56fc576fd11ba2fd016e71c6778ba56036654c1fe44b052891cf9a603079d87e7342bfbea524d64f7dab5311b"
+}
+```
