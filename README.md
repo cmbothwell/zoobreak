@@ -174,6 +174,8 @@ This is a proof-of-concept how a more developed application might require off-ch
 
 We also graciously thank the [random fox api](https://randomfox.ca/) which we used for the mock metadata. 
 
+A deployed version of the demo is available at: [https://zoobreak.netlify.app/mint](https://zoobreak.netlify.app/mint)
+
 ## Architecture
 
 ### Authorization
