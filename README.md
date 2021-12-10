@@ -124,6 +124,7 @@ Note that there are a few pre-requisites to get the above to work.
 the necessary config is in the `server/zoobreak/settings.py` file under `CELERY_BROKER_URL`)
 - You will also need to ensure that there is an appropriate "beat" task present in the Database, as this is not created automatically.
 You will need to create two tasks at an appropriate interval with the `api.tasks.watch_events` task, one with the `EventType.TRANSFER.value` argument, and one with the `EventType.NAME_CHANGE.value` argument. (see `api.types.EVENT_TYPE`)
+See the [docs](https://github.com/celery/django-celery-beat#models) for more information.
 
 As a final note: In a production setting the above tasks should be run as a daemon. See the [Celery docs](https://docs.celeryproject.org/en/stable/userguide/daemonizing.html) for more information.
 
