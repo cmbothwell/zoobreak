@@ -159,9 +159,9 @@ Run `npm run start` to start the dev server or `npm run build` to build a produc
 
 We include here a few screenshots of the working demo:
 
-![Zoobreak Demo App Image 1](https://github.com/cmbothwell/zoobreak/blob/main/demo_1.jpg?raw=true)
+![Zoobreak Demo App Image 1](https://github.com/cmbothwell/zoobreak/blob/main/demo_1.png?raw=true)
 
-![Zoobreak Demo App Image 2](https://github.com/cmbothwell/zoobreak/blob/main/demo_2.jpg?raw=true)
+![Zoobreak Demo App Image 2](https://github.com/cmbothwell/zoobreak/blob/main/demo_2.png?raw=true)
 
 Note that for the demo application to function properly, the user must connect their Metamask wallet. 
 The user also **must** be connected to the network where the contract is deployed. In our case this is the **RINKEBY** network.
