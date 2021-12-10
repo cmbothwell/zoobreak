@@ -166,6 +166,12 @@ The user also **must** be connected to the network where the contract is deploye
 
 In the spirit of a proof-of-concept, the demo application only includes rudimentary error handling, and will not warn the user if connected to an incorrect network.
 
+Important note on wallet registration: Before minting, the server requires that wallets register with their wallet address,  their email,  their discord username,  and their twitter account. 
+The server does not allow duplicates,and requires that the email, discord username, and twitter username follow the correct formatting rules.
+(i.e.for Discord ”username#0000” and for Twitter ”@username”) Rudimentary error messages are provided. 
+It is our knowledge that many users of the demo application may not have a discord or twitter account. In this case, dummy values (that are still valid according to the formatting & duplicate rules) are acceptable. 
+This is a proof-of-concept how a more developed application might require off-chain data to authorize mints
+
 We also graciously thank the [random fox api](https://randomfox.ca/) which we used for the mock metadata. 
 
 ## Architecture
