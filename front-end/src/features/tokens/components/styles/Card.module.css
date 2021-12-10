@@ -1,0 +1,107 @@
+.CardExterior {
+    position: relative;
+    min-width: 210px;
+    grid-column: span 1 / span 1;
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 16px;
+    margin-right: 16px;
+
+    background-color: #0d1117;
+    border-radius: 0.5rem;
+    border: 1.5px solid #30363d;
+
+    transition: all 0.5s;
+
+    text-align: center;
+}
+@media (min-width: 640px) {
+    .CardExterior {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.CardInterior {
+    /*flex: 1 1 0;*/
+    padding: 8px;
+    justify-content: space-between;
+    align-content: center;
+    background-color: #0d1117;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.CardImage {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    height: 256px;
+    width: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.CardName {
+    font-size: 0.875rem;
+    color: #c9d1d9;
+    text-align: left;
+    padding: 1px 4px;
+    line-height: 1.25rem;
+    font-weight: 500;
+}
+
+.CardList {
+    margin-top: 1px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.CardAttribute {
+    font-size: 0.825rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    color: rgba(107, 114, 128)
+}
+
+.RightAlign {
+    justify-self: end;
+}
+
+.CardSub {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4px;
+    padding: 1px 4px;
+}
+
+.Coin {
+    fill: goldenrod;
+
+    height: 18px;
+    width: 18px;
+    padding-top: 1px;
+    cursor: pointer;
+
+    margin-right: 10px;
+}
+
+.Bone {
+    fill: #0d1117;
+    stroke: rgba(107, 114, 128);
+    stroke-width: 16px;
+    stroke-linejoin: round;
+
+    height: 18px;
+    padding-top: 1px;
+    cursor: pointer;
+    transition: fill 0.2s ease;
+}
+.Active {
+    fill: #c9d1d9;
+    transition: fill 0.2s ease;
+}

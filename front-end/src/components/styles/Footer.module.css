@@ -1,0 +1,64 @@
+.FooterBase {
+    background-color: #0d1117;
+    border-top: 1px solid #30363d;
+}
+
+.FooterOuterDiv {
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px 4px;
+}
+@media (min-width: 640px) {
+    .FooterOuterDiv {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
+@media (min-width: 768px) {
+    .FooterOuterDiv {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+@media (min-width: 1024px) {
+    .FooterOuterDiv {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+.FooterInnerContentLeft {
+    display: flex;
+    justify-content: center;
+}
+
+.FooterLink {
+    color: rgba(156, 163, 175);
+}
+.FooterLink:hover {
+    color: rgba(107, 114, 128);
+}
+
+.FooterSVG {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.FooterInnerContentRight {
+    margin-top: 8px;
+    margin-left: 6px;
+}
+@media (min-width: 768px) {
+    .FooterInnerContentRight {
+        margin-top: 0;
+    }
+}
+
+.FooterCopyright {
+    text-align: center;
+    font-size: 0.7rem;
+    line-height: 1.5rem;
+    color: rgba(156, 163, 175);
+}

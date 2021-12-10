@@ -1,0 +1,142 @@
+.ButtonDiv {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.Button {
+    color: white;
+    cursor: pointer;
+    padding: 8px 16px;
+    background: #16A34A;
+    border: none;
+    border-radius: 2px;
+    text-align: right;
+    margin-left: auto;
+    margin-right: 0px;
+}
+.ButtonRight {
+    color: white;
+    cursor: pointer;
+    padding: 8px 16px;
+    background: #16A34A;
+    border: none;
+    border-radius: 2px;
+    text-align: right;
+    margin-left: 12px;
+    margin-right: 0px;
+}
+.Button:hover {
+    background: #15803D;
+}
+.ButtonRight:hover {
+    background: #15803D;
+}
+
+.LeftContent {
+    grid-column: span 2 / span 2;
+}
+.RightContent {
+    grid-column: span 1 / span 1;
+}
+
+.Text {
+    grid-column: span 3 / span 3;
+    text-align: left;
+    color: #c9d1d9;
+}
+.TextArea {
+    margin-top: 14px;
+    width: 100%;
+    height: 20rem;
+    color: #c9d1d9;
+    border: 1px solid #30363d;
+    background: #0d1117;
+}
+
+.InputGroup {
+    margin-top: 18px;
+    /*margin-top: 48px;*/
+}
+
+.Input {
+    display: block;
+    width: 100%;
+    margin-top: 6px;
+    padding: 12px 12px;
+    box-sizing:border-box;
+
+    background-color: #0d1117;
+
+    border: 1px solid #30363d;
+    border-radius: 6px;
+
+    color: #c9d1d9;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.InputWrapper {
+    display: block;
+    margin-bottom: 24px;
+}
+
+.Response {
+    width: 200%;
+    overflow: auto;
+    text-align: left;
+    color: #c9d1d9;
+    overflow-wrap: break-word;
+}
+.Error {
+    color: #cc0000;
+}
+.Pre {
+    /*word-break: break-all;*/
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    /*white-space: -moz-pre-wrap;  !* Mozilla, since 1999 *!*/
+    /*white-space: -o-pre-wrap;    !* Opera 7 *!*/
+    /*word-wrap: break-word;       !* Internet Explorer 5.5+ *!*/
+}
+
+.Label {
+    display: block;
+    width: 100%;
+    text-align: left;
+    color: #c9d1d9;
+    margin-right: auto;
+    margin-left: 0;
+}
+.TextAreaLabel {
+    margin-top: 12px;
+    display: block;
+    width: 100%;
+    text-align: left;
+    color: #c9d1d9;
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.Locked {
+
+}
+
+.TextLink {
+    color: #c9d1d9;
+
+    text-decoration: underline;
+    text-decoration-color: #a5acb2;
+    transition: 0.8s;
+    /*add those for opera and mozilla support*/
+    -webkit-text-decoration-color: transparent;
+    -moz-text-decoration-color: transparent;
+}
+.TextLink:hover {
+    color: white;
+    text-decoration-color: white;
+
+    /*add those for opera and mozilla support*/
+    -webkit-text-decoration-color: white;
+    -moz-text-decoration-color: white;
+}

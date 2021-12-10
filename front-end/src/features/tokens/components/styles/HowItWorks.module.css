@@ -1,0 +1,65 @@
+.Prose {
+    color: #c9d1d9;
+
+    grid-column: span 3 / span 3;
+    text-align: left;
+}
+.Prose > h2 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+.Prose > p {
+    /*margin: 0;*/
+}
+
+.TextLink {
+    color: #c9d1d9;
+
+    text-decoration: underline;
+    text-decoration-color: #a5acb2;
+    transition: 0.8s;
+    /*add those for opera and mozilla support*/
+    -webkit-text-decoration-color: transparent;
+    -moz-text-decoration-color: transparent;
+}
+.TextLink:hover {
+    color: white;
+    text-decoration-color: white;
+
+    /*add those for opera and mozilla support*/
+    -webkit-text-decoration-color: white;
+    -moz-text-decoration-color: white;
+}
+
+.IconHolder {
+    display: flex;
+    align-items: center;
+}
+
+.Icon {
+    height: 1.25rem;
+    width: 1.25rem;
+    color: rgba(251, 191, 36);
+    margin-right: 4px;
+}
+
+.Coin {
+    fill: goldenrod;
+
+    height: 18px;
+    width: 18px;
+    padding-top: 1px;
+    cursor: pointer;
+
+    margin-right: 10px;
+}
+
+.TextList {
+    list-style: none;
+    padding-left: 8px;
+    font-size: 0.875rem;
+}
+
+.TextList > li {
+    margin: 8px 0;
+}

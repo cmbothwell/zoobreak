@@ -1,0 +1,65 @@
+.App {
+  text-align: center;
+  background-color: #0d1117;
+}
+
+.Container {
+  min-height: 100vh;
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 32px 4px;
+}
+@media (min-width: 640px) {
+  .Container {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
+@media (min-width: 1024px) {
+  .Container {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.Grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
+}
+@media (min-width: 640px) {
+  .Grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1024px) {
+  .Grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.SidebarContainer {
+  grid-column: span 1 / span 1;
+}
+
+.ContentContainer {
+  margin-top: 25px;
+  grid-column: span 1 / span 1;
+
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+@media (min-width: 640px) {
+  .ContentContainer {
+    grid-column: span 3 / span 3;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1024px) {
+  .ContentContainer {
+    grid-column: span 3 / span 3;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

@@ -1,0 +1,11 @@
+/chain/artifacts/
+/server/db.sqlite3
+
+.env
+.idea
+.DS_Store
+
+venv
+node_modules
+/chain/cache/
+/chain/cache/

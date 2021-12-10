@@ -1,0 +1,19 @@
+[
+  "event Approval(address indexed owner, address indexed spender, uint256 value)",
+  "event LoveRewarded(address indexed user, uint256 loveReward)",
+  "event Transfer(address indexed from, address indexed to, uint256 value)",
+  "function ZOO() view returns (address)",
+  "function allowance(address owner, address spender) view returns (uint256)",
+  "function approve(address spender, uint256 amount) returns (bool)",
+  "function balanceOf(address account) view returns (uint256)",
+  "function burnLove(address _from, uint256 _amount)",
+  "function decimals() view returns (uint8)",
+  "function decreaseAllowance(address spender, uint256 subtractedValue) returns (bool)",
+  "function increaseAllowance(address spender, uint256 addedValue) returns (bool)",
+  "function name() view returns (string)",
+  "function rewardLove(address _to, uint256 _amount)",
+  "function symbol() view returns (string)",
+  "function totalSupply() view returns (uint256)",
+  "function transfer(address recipient, uint256 amount) returns (bool)",
+  "function transferFrom(address sender, address recipient, uint256 amount) returns (bool)"
+]

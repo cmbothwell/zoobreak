@@ -1,0 +1,32 @@
+.OuterDiv {
+    background-color: rgba(255, 251, 235);
+    border-left: 4px;
+    border-color: rgba(251, 191, 36);
+    padding: 2px;
+    box-sizing: content-box;
+}
+
+.InnerDiv {
+    display: flex;
+    align-items: center;
+}
+
+.IconDiv {
+    flex-shrink: 0;
+}
+
+.Icon {
+    height: 1.25rem;
+    width: 1.25rem;
+    color: rgba(251, 191, 36);;
+}
+
+.TextDiv {
+    margin-left: 3px;
+}
+
+.Text {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: rgba(180, 83, 9);
+}

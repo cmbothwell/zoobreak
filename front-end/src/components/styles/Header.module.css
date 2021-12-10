@@ -1,0 +1,195 @@
+.HeaderBase {
+    position: relative;
+    background-color: #0d1117;
+    border-bottom: 1px solid #30363d;
+}
+
+.HeaderContainer {
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.HeaderContentBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-width: 2px;
+    --f1r-border-opacity: 1;
+    border-color: rgba(243, 244, 246, var(--f1r-border-opacity));
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.HeaderLogo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.HeaderLogoImage {
+    height: 48px;
+    width: auto;
+}
+
+.HeaderLogoTextDiv {
+    display: flex;
+    align-items: center;
+    color: #e1e7ee;
+    margin-left: 18px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Poppins;
+}
+
+.HeaderNav {
+    display: none;
+    margin-left: 24px;
+}
+@media (min-width: 768px) {
+    .HeaderNav {
+        display: flex;
+    }
+}
+
+.Link {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+
+    margin-left: 48px;
+
+    color: #c9d1d9;
+    font-weight: 500;
+    text-decoration: none;
+}
+.Link:hover {
+    color: white;
+}
+
+.Active {
+    color: white;
+}
+
+.WalletActivate {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+
+    color: #c9d1d9;
+    font-weight: 500;
+    cursor: pointer;
+
+    margin-right: 4px;
+}
+.WalletActivate:hover {
+    color: white;
+}
+
+.Hidden {
+    display: none;
+}
+
+.StatusIndicator {
+    display: flex;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+
+    margin-left: 12px;
+
+    color: #c9d1d9;
+    font-weight: 500;
+}
+
+.PingContainer {
+    display: flex;
+    height: 0.50rem;
+    width: 0.50rem;
+}
+
+.PingText {
+    margin-right: 4px;
+}
+
+.Ping {
+    animation: ping 2000ms cubic-bezier(0, 0, 0.2, 1) infinite,
+                delay-animation 2000ms linear infinite;
+    position: absolute;
+    display: inline-flex;
+    height: 0.40rem;
+    width: 0.40rem;
+    border-radius: 9999px;
+    background-color: limegreen;
+    opacity: 0.50;
+}
+@keyframes ping {
+    75%, 100% {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+@keyframes delay-animation {
+    0% {
+        opacity: 0.50;
+    }
+    50% {
+        opacity: 0.50;
+    }
+    75.01% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.PingSpan {
+    position: relative;
+    display: inline-flex;
+    border-radius: 9999px;
+    width: 0.40rem;
+    height: 0.40rem;
+    background-color: lime;
+}
+
+.PingAlternate {
+    animation: ping 2000ms cubic-bezier(0, 0, 0.2, 1) infinite,
+    delay-animation 2000ms linear infinite;
+    position: absolute;
+    display: inline-flex;
+    height: 0.40rem;
+    width: 0.40rem;
+    border-radius: 9999px;
+    background-color: darkred;
+    opacity: 0.50;
+}
+@keyframes ping {
+    75%, 100% {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+@keyframes delay-animation {
+    0% {
+        opacity: 0.50;
+    }
+    50% {
+        opacity: 0.50;
+    }
+    75.01% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.PingSpanAlternate {
+    position: relative;
+    display: inline-flex;
+    border-radius: 9999px;
+    width: 0.40rem;
+    height: 0.40rem;
+    background-color: red;
+}
+
+.NotHidden {
+    display: block;
+}

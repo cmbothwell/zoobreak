@@ -1,0 +1,30 @@
+server {
+        # listen on port 443 (https)
+        listen 80;
+        server_name 188.166.147.140;
+
+        # Add No Sniff Header
+        add_header X-Content-Type-Options nosniff;
+
+        # write access and error logs to /var/log
+        access_log /var/log/zoobreak_access.log;
+        error_log /var/log/zoobreak_error.log;
+
+        # Prevent 403 Error
+        client_max_body_size 5M;
+
+        location / {
+                # forward application requests to the gunicorn server
+                proxy_pass http://localhost:8000;
+                proxy_redirect off;
+                proxy_set_header Host $host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        }
+
+        location /static {
+                # handle static files directly
+                alias /home/path/to/files/here/static;
+                expires 30d;
+        }
+}
